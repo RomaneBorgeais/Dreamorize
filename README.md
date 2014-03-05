@@ -1,4 +1,4 @@
-Projet_CDNL
+Dreamorize
 ===========
 
 Application mobile pour enregistrer ses rêves
