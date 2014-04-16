@@ -1,7 +1,12 @@
+@import "elements.less";
+@background: #222143;
+
+
 body{
-	background-color: #222143;
+	background-color: @background;
 	color: white;
 	font-family: "andarilho font", arial;
+	font-size: 15px;
 }
 
 .button{
@@ -30,8 +35,11 @@ a{
 }
 
 .header a .logo{
+	position: absolute;
 	width: 40px;
-	float: center;
+	margin: auto;
+	right: 0;
+	left: 0;
 	
 }
 
@@ -76,4 +84,58 @@ nav{
 		}
 	}
 }
+
+.nav-center{
+	top: 300px;
+	width: 100%;
+	height: 100px;
+	margin: 200px auto 0 auto;
+	text-align: center;
+
+
+}
+
+.view{
+	position: absolute;
+	top: 60px; right: 0px; bottom: 0px; left: 0px;
+	
+}
+
+.panel{
+	position: absolute;
+	top: 0; right: 0; left: 0; bottom: 0;
+	
+
+	-webkit-overflow-scrolling: touch;
+	transition-duration: 0.5s;
+-webkit-transition-duration: 0.5s ;
+-moz-transition-duration: 0.5s ;
+-ms-transition-duration: 0.5s ;
+-o-transition-duration: 0.5s ;
+
+
+}
+
+.left{
+	-webkit-transform:  translate3d(-100%,0,0);
+}
+
+.center{
+	-webkit-transform:  translate3d(0,0,0);
+}
+
+.right{
+	-webkit-transform:  translate3d(100%,0,0);
+}
+
+.button-fake{
+	background: @background;
+	border  : none;
+	font-family: "andarilho font";
+	color: white;
+	font-size: 15px;
+}
+
+
+
 
