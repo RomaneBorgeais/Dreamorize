@@ -1,60 +1,146 @@
-
 <div ng-controller="memCtrl">
-<div class="panel"  ng-class="{center: pageLevel == 0, left: pageLevel == 1}"  >
 
-    <div class="home_view">
-        <a >
-            <button class="button-fake" ng-click="increaseLevel()">
-            <img class="button" src="img/round_brain.png" />
-            <p>MEMORISER</p>
-            </button>
-        </a>
-        
-    </div>
+    <!-- <div class="panel"  ng-class="{center: pageLevel == 0, left: pageLevel == 1}"> -->
 
+        <div class="menu_memoriser">
 
+            <a href="#memoriser" ng-click="increaseLevel()">
+                
+                <button id="bouton_memoriser" class="bouton">
 
+                    <img src="img/pictos/home/icon-memoriser.png" alt="DREAMORIZE - Mémoriser">
+                    <p class="titre_bouton1">MÉMORISER</p>
 
-    <nav class="nav">
+                </button>
 
-        <a href="#">
-            <img class="button" src="img/round_brain.png"/>
-            <p>EXPLORER</p>
-        </a>
+            </a>
+            
+        </div>
 
+        <!-- <nav class="menu_bouton">
 
-        <a href="#">
-            <img class="button" src="img/round_brain.png"/>
-            <p>VISUALISER</p>
-        </a>
+             <a href="#explorer">
 
+                <button id="bouton_explorer" class="bouton">
 
-        <a href="#">
-            <img class="button" src="img/round_brain.png"/>
-            <p>PARTAGER</p>
-        </a>
+                    <img src="img/dreamorize_bouton1.png" alt="DREAMORIZE - Explorer">
+                    <p class="titre_bouton">EXPLORER</p>
 
-    </nav>
+                </button>
 
-</div>
+            </a>
 
-<div class="panel right"  ng-class="{center: pageLevel == 1, right: pageLevel == 0}" > 
+            <a href="#visualiser">
 
-    <nav class="nav-center">
+                <button id="bouton_visualiser" class="bouton">
 
-      <a href="#">
-        <img class="button" src="img/round_brain.png"/>
-        <p>VOCAL</p>
-      </a>
+                <img src="img/dreamorize_bouton1.png" alt="DREAMORIZE - Visualiser" id="bouton_visualiser">
+                <p class="titre_bouton">VISUALISER</p>
 
-      <a href="#">
-       <img class="button" src="img/round_brain.png"/>
-       <p>QUESTIONS</p>
-     </a>
+                </button>
+
+            </a>
 
 
-    </nav>
+            <a href="#partager">
 
-</div>
+                <button id="bouton_partager" class="bouton">
+
+                <img src="img/dreamorize_bouton1.png" alt="DREAMORIZE - Partager" id="bouton_partager">
+                <p class="titre_bouton">PARTAGER</p>
+
+                </button>
+
+            </a>
+
+        </nav> -->
+
+        <nav class="menu">
+
+            <table class="menu_bouton">
+
+                <tr>
+
+                    <td>&nbsp;</td>
+                    <td><p class="titre_bouton bouton">VISUALISER</p></td>
+                    <td>&nbsp;</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>
+
+                        <a href="#explorer">
+
+                            <button id="bouton_explorer" class="bouton">
+                                <img src="img/pictos/home/icon-explorer.png" alt="DREAMORIZE - Explorer">
+                            </button>
+
+                        </a>
+
+                    </td>
+
+                    <td>
+
+                        <a href="#visualiser">
+
+                            <button id="bouton_visualiser" class="bouton">
+                                <img src="img/pictos/home/icon-visualiser.png" alt="DREAMORIZE - Visualiser">
+                            </button>
+
+                        </a>
+
+                    </td>
+
+                    <td>
+
+                        <a href="#partager">
+
+                            <button id="bouton_partager" class="bouton">
+                                <img src="img/pictos/home/icon-echanger.png" alt="DREAMORIZE - Partager">
+                            </button>
+
+                        </a>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td><p class="titre_bouton">EXPLORER</p></td>
+                    <td>&nbsp;</td>
+                    <td><p class="titre_bouton">PARTAGER</p></td>
+
+                </tr>
+
+            </table>
+
+        </nav>
+
+    <!-- </div> -->
+
+   <!-- <div class="panel right"  ng-class="{center: pageLevel == 1, right: pageLevel == 0}">
+
+        <nav class="nav-center">
+
+            <a href="">
+
+                <img class="button" src="img/round_brain.png"/>
+                <p>VOCAL</p>
+
+            </a>
+
+            <a href="">
+
+                <img class="button" src="img/round_brain.png"/>
+                <p>QUESTIONS</p>
+
+            </a>
+
+        </nav>
+
+   </div> -->
 
 </div>

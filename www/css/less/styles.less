@@ -1,49 +1,61 @@
-@import "elements.less";
-@background: #222143;
+/* GENERAL */
 
+@import "../style.css";
+
+@import "elements.less";
+@background: #141444;
+@bleu_clair : #7BF6FF;
+@violet_clair: #B5B3FF;
+
+@font-face{
+
+	font-family: 'Andarilho Font';
+    src: url('../../font/andarilho-font-webfont.ttf');
+    src: url('../../font/andarilho-font-webfont.svg');
+    src: url('../../font/andarilho-font-webfont.woff');
+}
 
 body{
 	background-color: @background;
 	color: white;
-	font-family: "andarilho font", arial;
-	font-size: 15px;
-}
-
-.button{
-	width: 60px;
+	font-family: "Andarilho Font", Helvetica, sans-serif;
+	font-size: 14px;
 }
 
 a{
 	color: white;
+	text-decoration: none;
 }
 
+/* /GENERAL */
 
-.header{
+/* PAGE INTRO */
+
+#logo_dreamorize{
+
 	text-align: center;
-	width: 100%;
-	height: 60px;
-
+	margin-top: 200px;
 }
 
-.header a .menu{
-	display: block;
-	float: left;
-	height: 20px;
-	line-height: 60px;
-	vertical-align: middle;
-	
+/* /PAGE INTRO */
+
+/* HEADER */
+
+.home{
+
+	text-align: center;
 }
 
-.header a .logo{
-	position: absolute;
-	width: 40px;
-	margin: auto;
-	right: 0;
-	left: 0;
-	
+.icon_menu{
+
+	font-size: 20px;
 }
 
-.home_view{
+/* /HEADER*/
+
+/* PAGE MENU PRINCIPAL */
+
+.menu_memoriser{
 	position: absolute;
 	top: 120px;
 	right: 0;
@@ -56,27 +68,37 @@ a{
 	}
 }
 
+.bouton{
+	background: @background;
+	border: none;
+	font-family: "Andarilho Font";
+	color: white;
+}
 
-nav{
-	top: 300px;
-	width: 100%;
-	height: 100px;
-	margin: 350px auto 0 auto;
+.titre_bouton{
+
+	font-size: 18px;
+}
+
+.titre_bouton1{
+
+	font-size: 22px;
+}
+
+.menu_bouton{
+
+	margin: 220px auto 0 auto;
 	text-align: center;
-
-
 
 	a{
 		display: inline-block;
 		text-decoration: none;
-		width: 85px;
-		height: 100px;
 	
-
 		img{
 			display: block;
 			margin: auto;
 		}
+		
 		p{
 			display: block;
 			margin: auto;
@@ -85,35 +107,183 @@ nav{
 	}
 }
 
-.nav-center{
-	top: 300px;
-	width: 100%;
-	height: 100px;
-	margin: 200px auto 0 auto;
+/* /PAGE MENU PRINCIPAL */
+
+/* MEMORISER */
+
+.memoriser{
+
+	margin: 100px auto 0 auto;
 	text-align: center;
 
-
+	a{
+		display: inline-block;
+		text-decoration: none;
+	
+		img{
+			display: block;
+			margin: auto;
+		}
+		
+		p{
+			display: block;
+			margin: auto;
+			margin-top: 10px
+		}
+	}
 }
 
-.view{
+/* /MEMORISER */
+
+/* VOCAL */
+
+.picto_vocal{
+
+	text-align: center;
+	margin-top: 100px;
+}
+
+.enregistrer{
+
+	margin: 20px auto 0 auto;
+	text-align: center;
+
+	a{
+		display: inline-block;
+		text-decoration: none;
+	
+		img{
+			display: block;
+			margin: auto;
+		}
+		
+		p{
+			display: block;
+			margin: auto;
+			margin-top: 10px
+		}
+	}
+}
+
+.link_question{
+
+	text-align: center;
+	margin-top: 20px;
+
+	font-size: 18px;
+}
+
+/* /VOCAL */
+
+/* QUESTIONS */
+
+.tab_question{
+
+	margin: 20px auto 0 auto;
+	text-align: center;
+
+	a{
+		display: inline-block;
+		text-decoration: none;
+	
+		img{
+			display: block;
+			margin: auto;
+		}
+		
+		p{
+			display: block;
+			margin: auto;
+			margin-top: 10px
+		}
+	}
+}
+
+#evolution_questionnaire{
+
+	text-align: center;
+	margin-top: 200px;
+	background: #1C1C59;
+	height: 50px;
+	width: 100%;
+
 	position: absolute;
-	top: 60px; right: 0px; bottom: 0px; left: 0px;
+	bottom: 0;
 	
 }
+
+/* /QUESTIONS */
+
+/* DATE DU REVE */
+
+.date_element{
+
+	text-align: center;
+	margin-top: 20px;
+}
+
+.date_reve{
+
+	text-decoration: none;
+	text-align: center;
+
+	border: 1px solid @bleu_clair;
+	border-radius: 3px;
+	padding: 3px;
+
+	background-color: @background;
+	color: white;
+
+	width: 150px;
+}
+
+/* /DATE DE REVE */
+
+/* EMOTION */
+
+.emotion_text{
+
+	font-size: 20px;
+}
+
+.color_user{
+
+	color: @violet_clair;
+}
+
+/* /EMOTION */
+
+/* ACTION MOT CLEF TITRE */
+
+.action_reve{
+
+	text-decoration: none;
+	text-align: center;
+
+	border: 1px solid @violet_clair;
+	border-radius: 3px;
+	padding: 3px;
+
+	background-color: @background;
+	color: white;
+
+	width: 150px;
+}
+
+/* /ACTION MOT CLEF TITRE  */
+
+/* NAVIGATION */
 
 .panel{
 	position: absolute;
 	top: 0; right: 0; left: 0; bottom: 0;
-	
 
 	-webkit-overflow-scrolling: touch;
 	transition-duration: 0.5s;
--webkit-transition-duration: 0.5s ;
--moz-transition-duration: 0.5s ;
--ms-transition-duration: 0.5s ;
--o-transition-duration: 0.5s ;
-
-
+    -webkit-transition-duration: 0.5s ;
+    -moz-transition-duration: 0.5s ;
+    -ms-transition-duration: 0.5s ;
+    -o-transition-duration: 0.5s ;
 }
 
 .left{
@@ -128,14 +298,6 @@ nav{
 	-webkit-transform:  translate3d(100%,0,0);
 }
 
-.button-fake{
-	background: @background;
-	border  : none;
-	font-family: "andarilho font";
-	color: white;
-	font-size: 15px;
-}
-
-
+/* /NAVIGATION */
 
 
