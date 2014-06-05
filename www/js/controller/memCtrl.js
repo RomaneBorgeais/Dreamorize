@@ -56,5 +56,9 @@ function memCtrl($scope) {
             alert("Variables de rêve méconnues.");
         }
 
+        $scope.$parent.date = "";
+        $scope.$parent.type = "";
+        $scope.$parent.titre = "";
+
     }
 }
