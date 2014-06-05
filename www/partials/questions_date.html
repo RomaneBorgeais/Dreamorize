@@ -1,56 +1,34 @@
 <table class="tab_question">
-
 	<tr>
-
 		<td>
-
 			<a href="#vocal_5">
-	                
-		    <button class="bouton">
-
-		        <img src="img/pictos/memoriser/questionnaire/icon-fleche-gauche.png" alt="DREAMORIZE - Retour à la page précédente">
-
-		    </button>
-
+			    <button class="bouton">
+			        <img src="img/pictos/memoriser/questionnaire/icon-fleche-gauche.png" alt="DREAMORIZE - Retour à la page précédente">
+			    </button>
 	    	</a>
-
 	    </td>
-
 		<td>&nbsp;</td>
-
-		<td>
-
-			<p>QUAND AS-TU RÊVÉ ?</p>
-
+		<td class="intitule_question">
+			<p >QUAND AS-TU RÊVÉ ?</p>
 		</td>
-
 		<td>&nbsp;</td>
-
 		<td>
-
-			<a href="#questions_type">
-	                
+			<a href="#questions_type">        
 		        <button class="bouton">
-
 		            <img src="img/pictos/memoriser/questionnaire/icon-fleche-droite.png" alt="DREAMORIZE - Aller à la question suivante">
-
 		        </button>
-
 	    	</a>
-
 		</td>
-
 	</tr>
-
 </table>
 
 <div class="date_element">
 
-	<input type="text" value="CETTE NUIT" class="date_reve"/>
+	<input  type="text" value="CETTE NUIT" class="date_reve"/>
 
 	<p>ou</p>
 
-	<input type="text" value="AUTRE DATE" class="date_reve"/>
+	<input id="date_reve" type="text" placeholder="AVANT" class="date_reve" ng-model="date" jqdatepicker/>
 
 </div>
 
@@ -69,14 +47,15 @@
 		        </button>
 
 	    	</a>
+	    	
 
 		</td>
 
 		<td>
 
-			<a href="#questions_type">
+			<a href="">
 	                
-		        <button class="bouton">
+		        <button class="bouton" ng-click="addDate(date);">
 
 		            <img src="img/pictos/memoriser/questionnaire/icon-valider.png" alt="DREAMORIZE - Aller à la prochaine question">
 
@@ -95,3 +74,10 @@
 	<img src="img/dreamorize_evolution.png" alt="DREAMORIZE - Evolution du questionnaire">
 	
 </footer>
+
+
+
+
+
+
+

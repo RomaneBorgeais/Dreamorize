@@ -20,7 +20,7 @@
 
 		<td>
 
-			<p>TITRE POUR TON RÊVE ?</p>
+			<p class="intitule_question">TITRE POUR TON RÊVE ?</p>
 
 		</td>
 
@@ -46,7 +46,7 @@
 
 <div class="date_element">
 
-	<input type="text" value="&nbsp;" class="action_reve"/>
+	<input type="text" value="&nbsp;" class="action_reve" ng-model="titre"/>
 
 </div>
 
@@ -70,9 +70,9 @@
 
 		<td>
 
-			<a href="#explorer">
+			<a >
 	                
-		        <button class="bouton">
+		        <button class="bouton" ng-click="addTitre(titre);postReve();">
 
 		            <img src="img/pictos/memoriser/questionnaire/icon-valider.png" alt="DREAMORIZE - Aller à la prochaine question">
 
