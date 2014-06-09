@@ -39,7 +39,7 @@ function memCtrl($scope) {
             jQuery.ajax({
 
                 type: "GET",
-                url: "http://dreamorize.meximas.com/app/insertFromMobile.php",
+                url: "http://dreamorize.meximas.com/back_office/app/insertFromMobile.php",
                 data: {
                     date: date_reve,
                     type: type_reve,
