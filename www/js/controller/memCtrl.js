@@ -4,6 +4,7 @@ function memCtrl($scope) {
 
     $scope.increaseLevel = function() {
         $scope.pageLevel++;
+        console.log($scope.pageLevel);
         //console.log("page level après click : " + $scope.pageLevel);
     };
 
