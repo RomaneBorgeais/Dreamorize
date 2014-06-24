@@ -1,38 +1,60 @@
 <table class="tab_question">
+
 	<tr>
+
 		<td>
+
 			<a href="#vocal_5">
-			    <button class="bouton">
-			        <img src="img/pictos/memoriser/questionnaire/icon-fleche-gauche.png" alt="DREAMORIZE - Retour à la page précédente">
-			    </button>
+	                
+		    <button class="bouton">
+
+		        <span class="icon-fleche"></span>
+
+		    </button>
+
 	    	</a>
+
 	    </td>
+
 		<td>&nbsp;</td>
-		<td class="intitule_question">
-			<p >QUAND AS-TU RÊVÉ ?</p>
-		</td>
-		<td>&nbsp;</td>
+
 		<td>
-			<a href="#questions_type">        
-		        <button class="bouton">
-		            <img src="img/pictos/memoriser/questionnaire/icon-fleche-droite.png" alt="DREAMORIZE - Aller à la question suivante">
-		        </button>
-	    	</a>
+
+			<p>QUAND AS-TU RÊVÉ ?</p>
+
 		</td>
+
+		<td>&nbsp;</td>
+
+		<td>
+
+			<a href="#questions_type">
+	                
+		        <button class="bouton">
+
+		           <span class="icon-fleche"></span>
+
+		        </button>
+
+	    	</a>
+
+		</td>
+
 	</tr>
+
 </table>
 
 <div class="date_element">
 
-	<input  type="text" placeholder="CETTE NUIT" class="date_reve"/>
+	<input type="text" value="CETTE NUIT" class="date_reve"/>
 
 	<p>ou</p>
 
-	<input id="date_reve" type="text" placeholder="AVANT" class="date_reve" ng-model="date" jqdatepicker/>
+	<input type="text" value="AUTRE DATE" class="date_reve"/>
 
 </div>
 
-<table class="tab_question">
+<table class="tab_question tableau">
 
 	<tr>
 
@@ -42,12 +64,11 @@
 	                
 		        <button class="bouton">
 
-		            <img src="img/pictos/memoriser/questionnaire/icon-retour.png" alt="DREAMORIZE - Retour à la question">
+		           <span class="icon-croix"></span>
 
 		        </button>
 
 	    	</a>
-	    	
 
 		</td>
 
@@ -55,9 +76,9 @@
 
 			<a href="#questions_type">
 	                
-		        <button class="bouton" ng-click="addDate(date);">
+		        <button class="bouton">
 
-		            <img src="img/pictos/memoriser/questionnaire/icon-valider.png" alt="DREAMORIZE - Aller à la prochaine question">
+		            <span class="icon-ok"></span>
 
 		        </button>
 
@@ -69,15 +90,8 @@
 
 </table>
 
-<footer id="evolution_questionnaire">
+<footer class="evolution_questionnaire">
                
 	<img src="img/dreamorize_evolution.png" alt="DREAMORIZE - Evolution du questionnaire">
 	
 </footer>
-
-
-
-
-
-
-
