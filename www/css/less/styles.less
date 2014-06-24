@@ -5,11 +5,7 @@
 @import "elements.less";
 @background: #141444;
 @bleu_clair : #7BF6FF;
-@bleu_nuit : #222143;
-@vert_bleu : #67F4DC;
 @violet_clair: #B5B3FF;
-@rose : #BD59E6;
-
 
 @font-face{
 
@@ -31,17 +27,6 @@ a{
 	text-decoration: none;
 }
 
-p{
-
-	font-size: 24px;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-
-	font-size: 80px;
-	color: @violet_clair;
-}
-
 /* /GENERAL */
 
 /* PAGE INTRO */
@@ -61,10 +46,9 @@ p{
 	text-align: center;
 }
 
-.icon-menu{
+.icon_menu{
 
-	font-size: 30px;
-	color: @bleu_clair;
+	font-size: 20px;
 }
 
 /* /HEADER*/
@@ -93,17 +77,17 @@ p{
 
 .titre_bouton{
 
-	font-size: 24px;
+	font-size: 18px;
 }
 
 .titre_bouton1{
 
-	font-size: 26px;
+	font-size: 22px;
 }
 
 .menu_bouton{
 
-	margin: 250px auto 0 auto;
+	margin: 220px auto 0 auto;
 	text-align: center;
 
 	a{
@@ -121,23 +105,6 @@ p{
 			margin-top: 10px
 		}
 	}
-}
-
-.menu_bouton td{
-
-	padding: 0px 10px;
-}
-
-.icon-memoriser{
-
-	font-size: 100px;
-	color: @bleu_clair;
-}
-
-.icon-explorer, .icon-visualiser, .icon-echanger{
-
-	font-size: 80px;
-	color: @violet_clair;
 }
 
 /* /PAGE MENU PRINCIPAL */
@@ -164,13 +131,6 @@ p{
 			margin-top: 10px
 		}
 	}
-}
-
-.icon-micro, .icon-questions{
-
-	font-size: 100px;
-	color: @bleu_clair;
-	padding: 20px;
 }
 
 /* /MEMORISER */
@@ -205,29 +165,12 @@ p{
 	}
 }
 
-td a .icon-micro{
-
-	color: @violet_clair;
-}
-
-.icon-ok, .icon-reload, .icon-play, .icon-pause {
-
-	color: @bleu_clair;
-	font-size: 60px;
-}
-
-.icon-croix{
-
-	color: @violet_clair;
-	font-size: 60px;
-}
-
 .link_question{
 
 	text-align: center;
 	margin-top: 20px;
 
-	font-size: 24px;
+	font-size: 18px;
 }
 
 /* /VOCAL */
@@ -251,40 +194,27 @@ td a .icon-micro{
 		p{
 			display: block;
 			margin: auto;
-			margin-top: 10px;
+			margin-top: 10px
 		}
 	}
-
 }
 
-.tab_question td p{
-
-	font-size: 24px;
-}
-
-.tableau{
-
-	margin-bottom: 100px;
-}
-
-footer{
+#evolution_questionnaire{
 
 	text-align: center;
+	margin-top: 200px;
 	background: #1C1C59;
 	height: 50px;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	bottom: 0;
-	
-}
-
-.icon-fleche{
-
-	color: @bleu_clair;
-	font-size: 60px;
 }
 
 /* /QUESTIONS */
+
+.intitule_question{
+	width : 280px;
+}
 
 /* DATE DU REVE */
 
@@ -306,10 +236,7 @@ footer{
 	background-color: @background;
 	color: white;
 
-	width: 200px;
-
-	font-family: 'Andarilho Font', Helvetica, sans-serif;
-	font-size: 20px;
+	width: 150px;
 }
 
 /* /DATE DE REVE */
@@ -318,7 +245,7 @@ footer{
 
 .emotion_text{
 
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .color_user{
@@ -342,9 +269,7 @@ footer{
 	background-color: @background;
 	color: white;
 
-	width: 200px;
-	font-family: 'Andarilho Font', Helvetica, sans-serif;
-	font-size: 20px;
+	width: 150px;
 }
 
 /* /ACTION MOT CLEF TITRE  */

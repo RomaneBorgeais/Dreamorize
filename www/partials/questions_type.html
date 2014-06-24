@@ -1,3 +1,4 @@
+
 <table class="tab_question">
 
 	<tr>
@@ -8,7 +9,7 @@
 	                
 		    <button class="bouton">
 
-		        <span class="icon-fleche"></span>
+		        <img src="img/pictos/memoriser/questionnaire/icon-fleche-gauche.png" alt="DREAMORIZE - Retour à  la question précédente">
 
 		    </button>
 
@@ -20,7 +21,7 @@
 
 		<td>
 
-			<p>DE QUEL TYPE ÉTAIT TON RÊVE ?</p>
+			<p class="intitule_question">DE QUEL TYPE ÉTAIT TON RÊVE ?</p>
 
 		</td>
 
@@ -32,7 +33,7 @@
 	                
 		        <button class="bouton">
 
-		            <span class="icon-fleche"></span>
+		            <img src="img/pictos/memoriser/questionnaire/icon-fleche-droite.png" alt="DREAMORIZE - Aller à la question suivante">
 
 		        </button>
 
@@ -50,11 +51,11 @@
 
 		<td>
 
-			<a href="#questions_type">
+			<a href="#questions_couleur">
 	                
-		        <button class="bouton">
+		        <button class="bouton" ng-click="addType(1);">
 
-		             <span class="icon-reve"></span>
+		            <img src="img/pictos/memoriser/questionnaire/type/icon-reve.png" alt="DREAMORIZE - Type - Rêve" >
 
 		        </button>
 
@@ -64,11 +65,11 @@
 
 		<td>
 
-			<a href="#questions_type">
+			<a href="#questions_couleur">
 	                
-		        <button class="bouton">
+		        <button class="bouton" ng-click="addType(2);">
 
-		            <span class="icon-cauchemar"></span>
+		            <img src="img/pictos/memoriser/questionnaire/type/icon-cauchemar.png" alt="DREAMORIZE - Type - Cauchemar">
 
 		        </button>
 
@@ -78,11 +79,11 @@
 
 		<td>
 
-			<a href="#questions_type">
+			<a href="#questions_couleur">
 	                
-		        <button class="bouton">
+		        <button class="bouton" ng-click="addType(4);">
 
-		            <span class="icon-enfantin"></span>
+		            <img src="img/pictos/memoriser/questionnaire/type/icon-enfantin.png" alt="DREAMORIZE - Type - Enfantin">
 
 		        </button>
 
@@ -104,11 +105,11 @@
 
 		<td>
 
-			<a href="#questions_type">
+			<a href="#questions_couleur">
 	                
-		        <button class="bouton">
+		        <button class="bouton" ng-click="addType(3);">
 
-		            <span class="icon-lucide"></span>
+		            <img src="img/pictos/memoriser/questionnaire/type/icon-lucide.png" alt="DREAMORIZE - Type - Lucide">
 
 		        </button>
 
@@ -118,11 +119,11 @@
 
 		<td>
 
-			<a href="#questions_type">
+			<a href="#questions_couleur">
 	                
-		        <button class="bouton">
+		        <button class="bouton" ng-click="addType(5);">
 
-		            <span class="icon-dejavu"></span>
+		            <img src="img/pictos/memoriser/questionnaire/type/icon-dejavu.png" alt="DREAMORIZE - Type - Déjà-Vu">
 
 		        </button>
 
@@ -144,7 +145,7 @@
 
 </table>
 
-<table class="tab_question tableau">
+<table class="tab_question">
 
 	<tr>
 
@@ -154,7 +155,7 @@
 	                
 		        <button class="bouton">
 
-		            <span class="icon-croix"></span>
+		            <img src="img/pictos/memoriser/questionnaire/icon-retour.png" alt="DREAMORIZE - Retour à la question">
 
 		        </button>
 
@@ -168,7 +169,7 @@
 	                
 		        <button class="bouton">
 
-		            <span class="icon-ok"></span>
+		            <img src="img/pictos/memoriser/questionnaire/icon-valider.png" alt="DREAMORIZE - Aller à la prochaine question">
 
 		        </button>
 
@@ -180,7 +181,7 @@
 
 </table>
 
-<footer class="evolution_questionnaire">
+<footer id="evolution_questionnaire">
                
 	<img src="img/dreamorize_evolution.png" alt="DREAMORIZE - Evolution du questionnaire">
 	

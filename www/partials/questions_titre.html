@@ -4,11 +4,11 @@
 
 		<td>
 
-			<a href="#questions_keywords">
+			<a href="#question_keywords">
 	                
 		    <button class="bouton">
 
-		        <span class="icon-fleche"></span>
+		        <img src="img/pictos/memoriser/questionnaire/icon-fleche-gauche.png" alt="DREAMORIZE - Retour à la page précédente">
 
 		    </button>
 
@@ -20,7 +20,7 @@
 
 		<td>
 
-			<p>TITRE POUR TON RÊVE ?</p>
+			<p class="intitule_question">TITRE POUR TON RÊVE ?</p>
 
 		</td>
 
@@ -32,7 +32,7 @@
 	                
 		        <button class="bouton">
 
-		           <span class="icon-fleche"></span>
+		            <img src="img/pictos/memoriser/questionnaire/icon-fleche-droite.png" alt="DREAMORIZE - Enregistrer">
 
 		        </button>
 
@@ -46,11 +46,11 @@
 
 <div class="date_element">
 
-	<input type="text" value="&nbsp;" class="action_reve"/>
+	<input type="text" value="&nbsp;" class="action_reve" ng-model="titre"/>
 
 </div>
 
-<table class="tab_question tableau">
+<table class="tab_question">
 
 	<tr>
 
@@ -60,7 +60,7 @@
 	                
 		        <button class="bouton">
 
-		            <span class="icon-croix"></span>
+		            <img src="img/pictos/memoriser/questionnaire/icon-retour.png" alt="DREAMORIZE - Retour à la question">
 
 		        </button>
 
@@ -72,9 +72,9 @@
 
 			<a href="#home">
 	                
-		        <button class="bouton">
+		        <button class="bouton" ng-click="addTitre(titre);postReve();">
 
-		            <span class="icon-ok"></span>
+		            <img src="img/pictos/memoriser/questionnaire/icon-valider.png" alt="DREAMORIZE - Aller à la prochaine question">
 
 		        </button>
 
@@ -86,7 +86,7 @@
 
 </table>
 
-<footer class="evolution_questionnaire">
+<footer id="evolution_questionnaire">
                
 	<img src="img/dreamorize_evolution.png" alt="DREAMORIZE - Evolution du questionnaire">
 	
